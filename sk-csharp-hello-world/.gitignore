@@ -1,4 +1,4 @@
-settings.json
+appsettings.json
 bin
 obj
 *.ini

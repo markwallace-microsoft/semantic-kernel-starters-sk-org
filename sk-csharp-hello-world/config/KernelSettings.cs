@@ -1,13 +1,12 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
-using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 internal class KernelSettings
 {
-    public const string DefaultConfigFile = "config/settings.json";
+    public const string DefaultConfigFile = "config/appsettings.json";
     public const string OpenAI = "OPENAI";
     public const string AzureOpenAI = "AZUREOPENAI";
 
@@ -55,10 +54,13 @@ internal class KernelSettings
             throw new FileNotFoundException($"Configuration not found: {configFile}");
         }
 
-        var configJson = File.ReadAllText(configFile);
+        var configuration = new ConfigurationBuilder()
+            .SetBasePath(System.IO.Directory.GetCurrentDirectory())
+            .AddJsonFile(configFile, optional: true, reloadOnChange: true)
+            .Build();
 
-        return JsonSerializer.Deserialize<KernelSettings>(configJson)
-               ?? throw new InvalidDataException("Invalid semantic kernel settings");
+        return configuration.Get<KernelSettings>()
+               ?? throw new InvalidDataException($"Invalid semantic kernel settings: {configFile}");
     }
 
     /// <summary>
