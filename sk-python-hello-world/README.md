@@ -1,1 +1,1 @@
-# Semantic Kernel Python Hello World Template
+# Semantic Kernel Python Hello World Starter

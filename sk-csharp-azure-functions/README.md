@@ -1,1 +1,1 @@
-# Semantic Kernel C# Azure Functions Template
+# Semantic Kernel C# Azure Functions Starter

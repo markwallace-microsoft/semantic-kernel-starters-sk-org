@@ -1,1 +1,1 @@
-# Semantic Kernel Python Azure Functions Template
+# Semantic Kernel Python Azure Functions Starter
