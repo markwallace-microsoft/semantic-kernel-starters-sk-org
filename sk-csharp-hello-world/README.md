@@ -3,7 +3,10 @@
 The `sk-csharp-hello-world` console application demonstrates how to execute a semantic function.
 
 ## Prerequisites
- [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is required to run this starter.
+- [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is required to run this starter.
+- Install the recommended extensions
+    - [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+    - [Semantic Kernel Tools](https://marketplace.visualstudio.com/items?itemName=ms-semantic-kernel.semantic-kernel)
 
 ## Building the starter
 To build the console application use the following command:

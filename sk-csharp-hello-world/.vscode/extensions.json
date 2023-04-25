@@ -3,9 +3,6 @@
   // for the documentation about the extensions.json format
   "recommendations": [
     "ms-dotnettools.csharp",
-    "ms-dotnettools.dotnet-interactive-vscode",
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
     "ms-semantic-kernel.semantic-kernel"
   ]
 }
