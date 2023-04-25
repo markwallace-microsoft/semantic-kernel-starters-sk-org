@@ -1,0 +1,7 @@
+settings.json
+bin
+obj
+*.ini
+*.cache
+*.log
+*.tmp

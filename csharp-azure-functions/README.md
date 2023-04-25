@@ -1,1 +1,0 @@
-# C# Azure Functions Template

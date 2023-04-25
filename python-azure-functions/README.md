@@ -1,1 +1,0 @@
-# Python Azure Functions Template
